@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
         public View.OnClickListener loginDlgBtnOKOnClick = new View.OnClickListener() {
             public void onClick(View v) {
                 EditText edtUserName = (EditText) mDlgLogin.findViewById(R.id.edtUserName);
-
                 EditText edtPassword = (EditText) mDlgLogin.findViewById(R.id.edtPassword);
                 String userName = edtUserName.getText().toString().trim();
                 String password = edtPassword.getText().toString().trim();
@@ -71,6 +70,5 @@ public class MainActivity extends AppCompatActivity {
                 getMenuInflater().inflate(R.menu.main, menu);
                 return true;
             }
-            ;
         };
     }
